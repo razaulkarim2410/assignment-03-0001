@@ -4,8 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>assignment-03-0001</title>
+
+  <!-- sora google font -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<style>
+  .sora-font{
+    font-family: "Sora", serif;
+  }
+</style>
+<!-- daisyui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind css -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'top-btn': '#FFDC26',
+          'top-bg': '#FFF9F4',
+          'card-1': '#F9DF8A',
+        }
+      }
+    }
+  }
+</script>
+<!-- font awesome code -->
+<script src="https://kit.fontawesome.com/38f0d7b24a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <header class="sora-font max-w-screen-xl px-16 lg:px-28 mx-auto">
+   <nav>
+    <div class="navbar bg-base-100 bg-top-bg">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Item 1</a></li>
+           
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <img class="mr-5" src="./c1-assets/logo-header.png" alt="">
+        <br>
+        <a class="text-2xl">Browse<span class="text-top-btn">4</span>Pets</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Find a pet</a></li>
+          <li><a>Breeds</a></li>
+          <li><a>Contact us</a></li>
+          
+        </ul>
+      </div>
+      <div class="navbar-end gap-5">
+        <p><i class="fa-regular fa-bell"></i></p>
+        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+        <a class="btn bg-top-btn">Login</a>
+        <a class="btn bg-top-btn">Register</a>
+      </div>
+    </div>
+
+   </nav>
+   <!-- banner section -->
+    <section class="pt-28">
+     <div class="grid grid-cols-1 lg:grid-cols-2 ">
+       <!-- banner title -->
+      <div>
+        <h1 class="text-5xl ">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+        <p class="">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+        <button class="btn bg-top-btn">Find a pet</button>
+
+      </div>
+      <div>
+      <!-- banner img -->
+      <div class="">
+        <img src="./c1-assets/cat-big.png" alt="">
+
+       </div>
+      </div>
+     </div>
+    </section>
+  </header>
+  <main class="sora-font max-w-screen-xl px-16 lg:px-28 mx-auto">
+    <div>
+      <!-- Browse By Categories -->
+       <h2 class="font-medium text-3xl pb-8 pt-24">Browse By Categories</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 ">
+        <div class="rounded-lg text-center overflow-hidden bg-card-1">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img class="bg-white mx-auto p-5" src="c1-assets/dog-cartoon.png" />
+            </div>
+          </div>
+         <div class="p-8">
+          <h4 class="text-xl font-medium">Dog</h4>
+          <p>3 items</p>
+         </div>
+         </div>
+        <div class="rounded-lg text-center overflow-hidden bg-card-1">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img class="bg-white mx-auto p-5" src="c1-assets/fish-cartoon.png" />
+            </div>
+          </div>
+         <div class="p-8">
+          <h4 class="text-xl font-medium">Fish</h4>
+          <p>3 items</p>
+         </div>
+         </div>
+        <div class="rounded-lg text-center overflow-hidden bg-card-1">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img class="bg-white mx-auto p-5" src="c1-assets/cat-cartoon.png" />
+            </div>
+          </div>
+         <div class="p-8">
+          <h4 class="text-xl font-medium">Cat</h4>
+          <p>3 items</p>
+         </div>
+         </div>
+        <div class="rounded-lg text-center overflow-hidden bg-card-1">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img class="bg-white mx-auto p-5" src="c1-assets/bird-cartoon.png" />
+            </div>
+          </div>
+         <div class="p-8">
+          <h4 class="text-xl font-medium">Birds</h4>
+          <p>3 items</p>
+         </div>
+         </div>
+        <div class="rounded-lg text-center overflow-hidden bg-card-1">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img class="bg-white mx-auto p-5" src="c1-assets/cute-pet-small.png" />
+            </div>
+          </div>
+         <div class="p-8">
+          <h4 class="text-xl font-medium">Small pet</h4>
+          <p>3 items</p>
+         </div>
+         </div>
+        <div class="rounded-lg text-center overflow-hidden bg-card-1">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img class="bg-white mx-auto p-5" src="c1-assets/rabbit-cartoon.png" />
+            </div>
+          </div>
+         <div class="p-8">
+          <h4 class="text-xl font-medium">Rabit</h4>
+          <p>3 items</p>
+         </div>
+         </div>
+      </div>
+    </div>
+    
+
+
+  </main>
+  <footer class="sora-font max-w-screen-xl px-16 lg:px-28 mx-auto">
+
+  </footer>
   
 </body>
 </html>
